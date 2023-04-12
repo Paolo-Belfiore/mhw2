@@ -1,0 +1,65 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+  .choice-grid {    /*Mancavano le caratteristiche della griglia contenitrice*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .choice-grid div {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    width: calc(32.5% - 20px);  /*Calcolando la lartghezza, teniamo conto dei margini laterali, entrambi di 10px*/
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  @media screen and (max-width: 500px){
+    .choice-grid div{
+      width: calc(49% - 20px);
+    }
+  }
+
+  div.choosed{
+    background-color: #cfe3ff;
+  }
+
+  div.notchoosed{
+    opacity: 0.6;
+  }
+
+  button{
+    height: 50px;
+    width: 700px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    background-color: #cecece;
+  }
+  
+  button:hover{
+    background-color: #e0e0e0;
+  }
+
+  @media screen and (max-width: 700px){
+    button{
+      width: 95%;
+    }
+  }
+
+  .question-name {
+    align-items: center;
+    background-image: url('question_bg.jpg');
+    background-size: contain ;
+    display: flex;
+    height: 425px;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
